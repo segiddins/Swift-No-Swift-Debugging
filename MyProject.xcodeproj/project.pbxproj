@@ -13,6 +13,7 @@
 		460F53EC178AB8120301D073 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 218D8007EE67BF1699B19D36 /* main.m */; };
 		6F685D3993B96B5E8FAEB499 /* empty.h in Headers */ = {isa = PBXBuildFile; fileRef = BDCDF5AC97C2FE83729AD793 /* empty.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B179786EDD9516A75DE1F382 /* FW1.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F408F6F0598A6DF0141BB6 /* FW1.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0CCAEBC253685B900D93757 /* empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CCAEBB253685B900D93757 /* empty.swift */; };
 		E2216188D2E05FE20F8EFF77 /* FW2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B4C4CF98E0F24C2CC06BB04 /* FW2.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		A50A699A2F5F46FA65E4202F /* FW2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FW2.swift; sourceTree = "<group>"; };
 		BA85A3CBD054DCCB1DAECACA /* FW1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FW1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDCDF5AC97C2FE83729AD793 /* empty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = empty.h; sourceTree = "<group>"; };
+		C0CCAEBB253685B900D93757 /* empty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = empty.swift; sourceTree = "<group>"; };
 		D211C27AEE6D0C092DECC9CD /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -86,6 +88,7 @@
 		9170BA2B1849579732146391 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				C0CCAEBB253685B900D93757 /* empty.swift */,
 				4967DE094792B1FE78BB7B7B /* Info.plist */,
 				218D8007EE67BF1699B19D36 /* main.m */,
 			);
@@ -192,6 +195,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1020;
+				TargetAttributes = {
+					6DDBEB82AE69FC4B7FA2ADB0 = {
+						LastSwiftMigration = 1160;
+					};
+				};
 			};
 			buildConfigurationList = 4171C9B8E9CB5C104D191546 /* Build configuration list for PBXProject "MyProject" */;
 			compatibilityVersion = "Xcode 10.0";
@@ -233,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				460F53EC178AB8120301D073 /* main.m in Sources */,
+				C0CCAEBC253685B900D93757 /* empty.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +376,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = App/Info.plist;
@@ -386,6 +396,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.myapp.App;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -445,6 +457,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = App/Info.plist;
@@ -464,6 +477,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.myapp.App;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
